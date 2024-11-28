@@ -19,3 +19,7 @@ int Episodio::getNumero() {
 void Episodio::setNumero(int numero) {
     this->numero = numero;
 }
+
+void Episodio::f() {
+    cout << "Do not call this function" << endl;
+}
