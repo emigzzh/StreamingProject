@@ -87,6 +87,10 @@ bool PeliculaDataLoader(Pelicula& vectorList) {
     return true;
 }
 
+// Asuma que los vectores contienen todas las Peliculas y Series disponibles
+// Asuma que cada Serie tiene contenido en su atributo vector Temporadas todas las temporadas que tenga
+// Asuma que cada Temporada tiene contenido en su atributo vector Episodios todos los episodios que tenga
+
 int main() {
     vector<Pelicula> peliculasLista;
     vector<Serie> seriesLista;
@@ -97,12 +101,13 @@ int main() {
     bool flag = true;
     int option;
 
-    cout << "Bienvenido a la Pokedex! Ingrese el número de alguna de las siguientes opciones para realizar acciones:" << endl;
+    cout << "Bienvenido a la plataforma de streaming!"
+         << "Ingrese el número de alguna de las siguientes opciones para realizar acciones:" << endl;
 
     while(flag) {
-        cout << "\n <1> Mostrar las estadísticas de algún Pokémon" << endl;
-        cout << " <2> Simular un combate entre dos Pokemones" << endl;
-        cout << " <3> Ingresar un nuevo Pokemón a la Pokedex" << endl;
+        cout << "\n <1> ..." << endl;
+        cout << " <2> ..." << endl;
+        cout << " <3> ..." << endl;
         cin >> option;
 
         switch(option) {
@@ -120,6 +125,8 @@ int main() {
             
                 break;
             }
+
+            // Añadir todas las funciones sean necesarias
             
             default: {
                 cout << option << " no es una opción válida" << endl;
@@ -127,7 +134,7 @@ int main() {
             }
         }
 
-        cout << "\n¿Desea continuar con alguna otra opción de la Pokedex? (Ingrese el número) \n <1> Sí \n <2> No" << endl;
+        cout << "\n¿Desea continuar? (Ingrese el número) \n <1> Sí \n <2> No" << endl;
         bool endFlag = true;
         int key;
 
