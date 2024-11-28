@@ -27,7 +27,6 @@ class Temporada {
         double getCalificacion();
         string getTitulo();
 
-
         void setCalificacion(double);
         void setNumero(int);
         void setCantidadCalificaciones(int);

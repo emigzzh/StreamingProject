@@ -17,6 +17,8 @@ class Episodio : public Video {
 
         int getNumero();
         void setNumero(int);
+
+        void f();
 };
 
 #endif

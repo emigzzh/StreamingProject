@@ -11,6 +11,8 @@ class Pelicula : public Video {
     public:
         Pelicula();
         Pelicula(string, string, double, int, int);
+
+        void f();
 };
 
 #endif

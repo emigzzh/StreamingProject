@@ -33,6 +33,8 @@ class Video {
         void setId(int);
 
         void añadirCalificacion(double);
+
+        virtual void f() = 0;
 };
 
 #endif
